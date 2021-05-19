@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\gps-tracking-system\\mobile\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\location_fragment.xml",
+        "source": "D:\\gps-tracking-system\\mobile\\app\\src\\main\\res\\layout\\location_fragment.xml"
+    },
+    {
+        "merged": "D:\\gps-tracking-system\\mobile\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\verification_fragment.xml",
+        "source": "D:\\gps-tracking-system\\mobile\\app\\src\\main\\res\\layout\\verification_fragment.xml"
+    }
+]

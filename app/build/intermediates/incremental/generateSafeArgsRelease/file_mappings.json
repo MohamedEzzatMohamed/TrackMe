@@ -1,0 +1,1 @@
+[{"navFile":"src\\main\\res\\navigation\\main_navigation.xml","javaFiles":["com.example.track_me.screens.verification.VerificationFragmentDirections","com.example.track_me.screens.location.LocationFragmentDirections","com.example.track_me.screens.location.LocationFragmentArgs"]}]

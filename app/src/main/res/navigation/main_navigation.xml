@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2018, The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/verification_destination"
+    >
+
+    <fragment
+        android:id="@+id/verification_destination"
+        android:name="com.example.track_me.screens.verification.VerificationFragment"
+        android:label="verification_fragment"
+        tools:layout="@layout/verification_fragment">
+        <action
+            android:id="@+id/action_verification_to_location"
+            app:destination="@id/location_destination"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/location_destination"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/location_destination"
+        android:name="com.example.track_me.screens.location.LocationFragment"
+        android:label="location_fragment"
+        tools:layout="@layout/location_fragment">
+        <argument
+            android:name="userDevice"
+            app:argType="com.example.track_me.models.UserDevice" />
+        <action
+            android:id="@+id/action_location_destination_to_verification_destination"
+            app:destination="@id/verification_destination" />
+    </fragment>
+</navigation>
